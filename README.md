@@ -20,5 +20,9 @@ Note that: The summary to find the best models has been added in the last cell o
 I have used decision tree classifier with both default crition (gini) and non-default criterion (entropy), respectively. In addition, I have also tuned hyperparameter with both grid search cv and randomized search cv, respectively to get the best parameters.
 
 
+# 4. Kmeans Clustering
+To find the different groups of item with same characteristics, I have used Kmeans clustering by analyzing and visualizing the same technique in many ways. Finally, I have created two models with 9 clusters and 8 clusters, respectively. 
+
+
 # Note:
 This repository is incomplete till now. More ml algorithms and description to be added.................................................................. 
