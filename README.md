@@ -11,9 +11,9 @@ Note that: To see the tensorboard, open .ipynb file in colab.
 
 
 # 2. Regression Analysis
-I have used 6 types of regression models to predict my depression or happiness over some features. I used information gain method for feature selection. The 6 models gave me different train and accuracy and I have selected the best models for my problem. 
+I have used 7 types of regression models to predict my depression or happiness over some features. I used information gain method for feature selection. The 7 models gave me different train and accuracy and I have selected the best models for my problem. 
 
-Note that: The summary to find the best models has been added in the last cell of .ipynb file
+Note that: The summary to find the best models has been added in the last cell of .ipynb file.
 
 
 # Note:
