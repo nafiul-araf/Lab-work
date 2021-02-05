@@ -18,7 +18,7 @@ A deep learning method which works like human brain to predict a dependent varia
 
 
 
-Note: My dataset consists of 920 instances with 20 features. The dataset is my personal dataset. So It is not sharable in public. Just showing the process. In addition, you can also open the codes in colab by clicking the link "open in colab". 
+# Note: My dataset consists of 920 instances with 20 features. The dataset is my personal dataset. So It is not sharable in public. Just showing the process. In addition, you can also open the codes in colab by clicking the link "open in colab". 
 
 
 # 1. Association Rules
