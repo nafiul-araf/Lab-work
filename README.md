@@ -16,5 +16,9 @@ I have used 7 types of regression models to predict my depression or happiness o
 Note that: The summary to find the best models has been added in the last cell of .ipynb file.
 
 
+# 3. Decision Tree
+I have used decision tree classifier with both default crition (gini) and non-default criterion (entropy), respectively. In addition, I have also tuned hyperparameter with both grid search cv and randomized search cv, respectively to get the best parameters.
+
+
 # Note:
 This repository is incomplete till now. More ml algorithms and description to be added.................................................................. 
