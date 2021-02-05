@@ -1,7 +1,7 @@
 # Student Behavior Analysis with Machine Learning, Deep Learing Techniques
 
 
-Note that: The dataset is my personal dataset. So It is not sharable in public. Just showing the process. In addition, you can also open this code in colab by clicking the link "open in colab" to see the tensorboard also.
+Note that: The dataset is my personal dataset. So It is not sharable in public. Just showing the process. In addition, you can also open the codes in colab by clicking the link "open in colab". 
 
 
 # 1. Artificial Neural Network (ANN)
