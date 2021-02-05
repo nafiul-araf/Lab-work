@@ -5,11 +5,15 @@ Note that: The dataset is my personal dataset. So It is not sharable in public. 
 
 
 # 1. Artificial Neural Network (ANN)
-This neural network model predicts my depression or happiness(Very Good, Good, Normal, Bad, Very Bad) over some features. My model gives 94% training accuracy and 91% test accuracy with one hidden layer which have 11 neurons.
+This neural network model predicts my depression or happiness(Very Good, Good, Normal, Bad, Very Bad) over some features. My model gives 94% training accuracy and 91% test accuracy with one hidden layer which have 11 neurons. 
+
+Note that: To see the tensorboard, open .ipynb file in colab. 
 
 
 # 2. Regression Analysis
 I have used 6 types of regression models to predict my depression or happiness over some features. I used information gain method for feature selection. The 6 models gave me different train and accuracy and I have selected the best models for my problem. 
+
+Note that: The summary to find the best modles has been added in the last cell of .ipynb file
 
 
 # Note:
