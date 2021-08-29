@@ -22,12 +22,22 @@ sns.set(rc={
 
 data=pd.read_csv("Copy of Depression and Happiness Factor Analysis.csv")
 
-data=data.drop(['Timestamp','How much have you succeeded to cope up with the environment of your educational institution?','How long did you sleep last night?(in hours)','Age','Unnamed: 20'],axis='columns')
+data=data.drop(['Timestamp','How much have you succeeded to cope up with the environment of your educational institution?','How long did you sleep last night?(in hours)',
+                'Age','Unnamed: 20'],axis='columns')
 
-data.rename({'Relationship status':'Relationship_status','Are you satisfied with your meal today?':'Satisfaction_with_meal','Which year are you in?':'Year','How are you feeling right now?':'Felling_right_now','Your location ?':'Location','Are you happy with your financial state?':'Happy_with_financial','Understanding with your family members?':'Understanding_with_family','Are you feeling pressure in your study or work right now?':'Study_pressure','Are you satisfied with your academic result?':'Satisfaction_academic_result','Are you happy with your living place?':'Living_place_happiness','Who supports you when you are not succeeding in your academic life?':'Supports_in_academic_life','Have you used any social media within the last 6 hours?':'Using_social_media','Do you have inferiority complex?':'Inferiority_complex','Are you feeling sick/health issues today?':'Sick_or_not_today','Have you done any recreational activity (sports, gaming, hobby etc.) today?':'Recreational_activity','On a scale of 1-100, how would you express this feeling?':'Express_feeling'},axis=1,inplace=True)
+data.rename({'Relationship status':'Relationship_status','Are you satisfied with your meal today?':'Satisfaction_with_meal','Which year are you in?':'Year',
+             'How are you feeling right now?':'Felling_right_now','Your location ?':'Location','Are you happy with your financial state?':'Happy_with_financial',
+             'Understanding with your family members?':'Understanding_with_family','Are you feeling pressure in your study or work right now?':'Study_pressure',
+             'Are you satisfied with your academic result?':'Satisfaction_academic_result','Are you happy with your living place?':'Living_place_happiness',
+             'Who supports you when you are not succeeding in your academic life?':'Supports_in_academic_life',
+             'Have you used any social media within the last 6 hours?':'Using_social_media','Do you have inferiority complex?':'Inferiority_complex',
+             'Are you feeling sick/health issues today?':'Sick_or_not_today','Have you done any recreational activity (sports, gaming, hobby etc.) today?':'Recreational_activity',
+             'On a scale of 1-100, how would you express this feeling?':'Express_feeling'},axis=1,inplace=True)
 
 def apriori_association_rules(df,column):
-    """This function analyse the unique element of each features which have more than one unique value or element and found the association     rules with the feelings level (Very Good, Good, Normal, Bad, Very Bad). It splits the data according to the each unique values of the       features. One Hot encoding are used to encode the data. Then it builds the models and analyses the results.
+    """This function analyse the unique element of each features which have more than one unique value or element and found the association rules with the feelings level 
+    (Very Good, Good, Normal, Bad, Very Bad). It splits the data according to the each unique values of the features. One Hot encoding are used to encode the data. Then it builds 
+    the model and analyses the result.
     
     Input:
          df: The entire pandas dataframe.
@@ -35,7 +45,7 @@ def apriori_association_rules(df,column):
     
     Output:
          un_val: A list of unique values/items of the given features.
-         basket_list: A list of splitting data according to the each unique values of the features. The data is a pandas dataframe for each                       item.
+         basket_list: A list of splitting data according to the each unique values of the features. The data is a pandas dataframe for each item.
          basket_list_encoded: A list of encoded data of the splitting data.
          apriori_rules_list: A list of tuple of the resultant association rules shape (rows, columns). Rows are the total founded rules.
          plot: Visualization of founded association rules for each unique items. It returns a seaborn's heatmap for each of the items.
